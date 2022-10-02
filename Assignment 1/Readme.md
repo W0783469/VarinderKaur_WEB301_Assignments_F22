@@ -7,3 +7,7 @@ Date Created: 2022/10/01
  all the files(index.html, css folder and script.js) to the github repository.
 
  I clicked two images with my own device of nature one of them is landscape and other is portrait.
+ Then I change the title in index.html with the words "Responsive Images".
+ Added meta tag for the responsive image.
+ Added subject matter in the description for what I am taking the pictures.
+ Now its time to commit the code.
