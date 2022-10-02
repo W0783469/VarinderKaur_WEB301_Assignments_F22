@@ -11,3 +11,12 @@ Date Created: 2022/10/01
  Added meta tag for the responsive image.
  Added subject matter in the description for what I am taking the pictures.
  Now its time to commit the code.
+
+ Added images in index.html
+ Now added css  to display the landscape images when device screen will be 700px or larger and portrait image when the screen is less than 700px.
+ Commit the code.
+ Added paragraphs related to the image.
+ Added more css with the font size to the page.
+ Added media query to the css to change the font to 12px when is screen is more than the 700px.
+ Added more css.....
+ Then,Commit the Whole changed code.
