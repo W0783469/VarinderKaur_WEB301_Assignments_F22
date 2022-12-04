@@ -2,20 +2,237 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">    
+   <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <!-- Bootstrap CSS -->    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <meta name="description" content="YOURDESCRIPTIONHERE">
-  <meta name="author" content="YOURNAMEHERE" />
-  <title>YOURTITLEHERE</title>
+  <meta name="author" content="Varinder Kaur" />
+  <title>Varinder Kaur</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <header>
-    <!-- Nav goes here -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <img src="images/windlogo.png" alt="Italian Trulli">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+		  
+            <a class="nav-link active" aria-current="page" href="#">Dine</a>
+			 
+
+			  <a class="nav-link" href="#">Do</a>
+            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="#">Stay</a>
+            <a class="nav-link"  href="#">Events</a>
+			<a class="nav-link"  href="#">Best of</a>
+			<a class="nav-link"  href="#">Experiences</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-    <!-- Content goes here -->
+ 
+ 
+    <main class="container bg-info">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+                src="images/s2.jpg"
+                class="card-img-top"
+                alt="first"
+              />
+      
+          </div>
+          <div class="carousel-item active">
+            <img
+            src="images/s1.jpg"
+            class="card-img-top"
+            alt="first"
+          />
+      
+          </div>
+          <div class="carousel-item">
+            <img
+            src="images/s3.jpg"
+            class="card-img-top"
+            alt="first"
+          />
+      
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="accordion pt-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Experiences
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+          Events
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#customLastElement"
+              aria-expanded="false"
+              aria-controls="customLastElement"
+            >
+              Shop
+            </button>
+          </h2>
+          <div
+            id="customLastElement"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of accordion code -->
+      <div class="card-grid m-3 pb-4">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="images/first.jpg"
+                class="card-img-top"
+                alt="first"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of first card-->
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="images/second.jpg"
+                class="card-img-top"
+                alt="first"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of second card -->
+        </div>
+      </div>
   </main>
   <footer>
     <!-- Github link goes here -->
